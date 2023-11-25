@@ -1,0 +1,28 @@
+Given an array of size N containing only 0s, 1s, and 2s; sort the array in ascending order.
+
+
+Example 1:
+
+Input:
+N = 5
+arr[]= {0 2 1 2 0}
+Output:
+0 0 1 2 2
+Explanation:
+0s 1s and 2s are segregated
+into ascending order.
+
+Soln : Two approach-
+1. Sort the array using our traditional sorting way ot merge sort
+The only issue will be Time complexity that will be in our traditional case is O(n^2)
+and in merge sort it will be O(nlogn)
+
+2. Or We could Use DNF algorithm which is short form of Dutch National flag algo
+Algorithm:
+1. set three variable low, mid and high where low and mid should point at start of array and high
+at end of array
+2 if arr[mid] 0, swap arr[low] and arr[mid] and increase both low and mid by 1.
+3. If arr[mid]==1, Increase value of mid by 1
+4. If arr[mid]==2, swap arr[mid] and arr[high] and decrease value of high by 1
+
+TC will be O(n).
