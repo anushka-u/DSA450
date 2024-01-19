@@ -19,7 +19,7 @@ public class CustomArrayList {
     //Insert method to add elements into ArrayList
     public void insert(Object element)
     {
-        if(index>=0)
+        if(index>=arr.length)
         {
         	grow();
         }
@@ -39,5 +39,35 @@ public class CustomArrayList {
     	}
     	arr=brr;
         
+    }
+    
+    public void remove(int indexToBeRemoved) throws Exception{
+    	if(indexToBeRemoved>arr.length)
+    	{
+    		throw new IndexOutOfBoundsException("Index Out of Bound");
+    	}
+    	Object brr[] = new Object[arr.length-1];
+    	
+    	for(int i=0;i<arr.length-1;i++)
+    	{
+    		if(i< indexToBeRemoved)
+    		{
+    			brr[i] = arr[i];
+    		}
+    		else
+    		{
+    			brr[i]=arr[i+1];
+    		}
+    	}
+    	arr=brr;
+
+    	System.out.println(arr.length);
+    }
+    
+    public void PrintArray() {
+    	for(int i=0;i<arr.length;i++)
+    	{
+    		System.out.print(arr[i]+ " ");
+    	}
     }
 }
