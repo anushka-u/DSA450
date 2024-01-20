@@ -16,6 +16,10 @@ public class CustomArrayList {
         arr = new Object[size];
     }
 
+    public Object get(int indexFind)
+    {
+    	return arr[indexFind];
+    }
     //Insert method to add elements into ArrayList
     public void insert(Object element)
     {
@@ -31,7 +35,7 @@ public class CustomArrayList {
 
     public void grow()
     {
-    	int capacity = arr.length+ (arr.length /2);
+    	int capacity = arr.length+ (arr.length/2);
     	Object brr[] = new Object[capacity];
     	for(int i=0;i<arr.length;i++)
     	{
@@ -41,32 +45,51 @@ public class CustomArrayList {
         
     }
     
-    public void remove(int indexToBeRemoved) throws Exception{
-    	if(indexToBeRemoved>arr.length)
-    	{
-    		throw new IndexOutOfBoundsException("Index Out of Bound");
-    	}
-    	Object brr[] = new Object[arr.length-1];
+    //Custom Remove() method - space complexity = O(n) and using arraycopy() with sc = O(1)
+    public Object remove(int indexToBeRemoved) throws Exception{
     	
-    	for(int i=0;i<arr.length-1;i++)
+//    	if(indexToBeRemoved>arr.length)
+//    	{
+//    		throw new IndexOutOfBoundsException("Index Out of Bound");
+//    	}
+    	
+    	Object ob = get(indexToBeRemoved);
+//    	Object brr[] = new Object[arr.length-1];
+//    	
+//    	for(int i=0;i<arr.length-1;i++)
+//    	{
+//    		if(i< indexToBeRemoved)
+//    		{
+//    			brr[i] = arr[i];
+//    		}
+//    		else
+//    		{
+//    			brr[i]=arr[i+1];
+//    		}
+//    	}
+    	//arr=brr;
+    	
+    	//formula to calculate number of shift operation
+    	int noOfShiftOperation = arr.length - indexToBeRemoved -1;
+    	
+    	if(noOfShiftOperation>0)
     	{
-    		if(i< indexToBeRemoved)
-    		{
-    			brr[i] = arr[i];
-    		}
-    		else
-    		{
-    			brr[i]=arr[i+1];
-    		}
+    		System.arraycopy(arr, indexToBeRemoved+1, arr, indexToBeRemoved, noOfShiftOperation);
     	}
-    	arr=brr;
-
-    	System.out.println(arr.length);
+    	index--;
+    	arr[index]=null;
+    	
+    	
+    	
+    	return ob;
     }
     
     public void PrintArray() {
     	for(int i=0;i<arr.length;i++)
     	{
+    		if( arr[i] == null) {
+    			continue;
+    		}
     		System.out.print(arr[i]+ " ");
     	}
     }
