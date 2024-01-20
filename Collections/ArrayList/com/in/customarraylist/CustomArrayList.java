@@ -15,12 +15,43 @@ public class CustomArrayList {
     {
         arr = new Object[size];
     }
+    /*
+     * 
+     * 
+     * 
+     * 
+     * get() method
+     * 
+     * 
+     * 
+     * 
+     * 
+     * 
+     * 
+     */
 
     public Object get(int indexFind)
     {
     	return arr[indexFind];
     }
-    //Insert method to add elements into ArrayList
+    /*
+     * 
+     * 
+     * 
+     * 
+     * 
+     * 
+     * 
+     * Insert method to add elements into ArrayList
+     *
+     * 
+     * 
+     * 
+     * 
+     * 
+     * 
+     * 
+     */
     public void insert(Object element)
     {
         if(index>=arr.length)
@@ -32,6 +63,21 @@ public class CustomArrayList {
         //increasing size of index
         index+=1;
     }
+    
+    
+    /*
+     * 
+     * 
+     * 
+     * Grow method is to dynamically grow the size of array
+     * length of an ArrayList sholuld increased by 50%
+     * 
+     * 
+     * 
+     * 
+     * 
+     * 
+     */
 
     public void grow()
     {
@@ -45,7 +91,20 @@ public class CustomArrayList {
         
     }
     
-    //Custom Remove() method - space complexity = O(n) and using arraycopy() with sc = O(1)
+    /*
+     * 
+     * 
+     * 
+     * 
+     * Creating a Custom remove method in two ways--
+     * The commented part is from scratch and has SC of O(n)
+     * Another approach which is solely for simplifying the code is by using arraycopy() which copies the data  in 
+     * source array only
+     * 
+     * 
+     * 
+     * 
+     */
     public Object remove(int indexToBeRemoved) throws Exception{
     	
 //    	if(indexToBeRemoved>arr.length)
@@ -74,6 +133,7 @@ public class CustomArrayList {
     	
     	if(noOfShiftOperation>0)
     	{
+    		//System.arraycopy(ob, noOfShiftOperation, ob, indexToBeRemoved, noOfShiftOperation);
     		System.arraycopy(arr, indexToBeRemoved+1, arr, indexToBeRemoved, noOfShiftOperation);
     	}
     	index--;
@@ -84,13 +144,26 @@ public class CustomArrayList {
     	return ob;
     }
     
-    public void PrintArray() {
+    /*
+     * 
+     * 
+     * 
+     * 
+     * 
+     * OVERRIDING toString method of Object class in our custom ArrayList
+     * 
+     * 
+     * 
+     * 
+     * 
+     */
+    public String toString() {
+    	StringJoiner sJoiner = new StringJoiner(", ","[ "," ]");
+    	
     	for(int i=0;i<arr.length;i++)
     	{
-    		if( arr[i] == null) {
-    			continue;
-    		}
-    		System.out.print(arr[i]+ " ");
+    		sJoiner.add(String.valueOf(arr[i]));
     	}
+    	return sJoiner.toString();
     }
 }
