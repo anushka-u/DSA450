@@ -5,6 +5,22 @@ public class Employee implements Comparable<Employee> {
 	private int empId;
 	private String empName;
 
+	private double salary;
+
+	public double getSalary() {
+		return salary;
+	}
+
+	public void setSalary(double salary) {
+		this.salary = salary;
+	}
+
+	public Employee(int empId, String empName, double salary) {
+		this.empId = empId;
+		this.empName = empName;
+		this.salary = salary;
+	}
+
 	public String getEmpName() {
 		return empName;
 	}
@@ -35,6 +51,8 @@ public class Employee implements Comparable<Employee> {
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub
-		return "EmpId is" + empId + " EmpName is "+empName;
+		return "EmpId is" + empId + " EmpName is "+empName + "EmpSalary is " + salary;
 	}
+
+
 }
