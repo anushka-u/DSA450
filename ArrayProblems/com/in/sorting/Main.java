@@ -16,9 +16,16 @@ public class Main {
 		emp.add(new Employee(122, "Karan"));
 		emp.add(new Employee(125, "Kusum"));
 		emp.add(new Employee(126, "Kanak"));
-		
+
+		//It will use Employee class comparator which will sort data as per id
 		Collections.sort(emp);
 		System.out.println(emp);
+
+		//to sort the data using name
+		Collections.sort(emp,new EmployeeComparator());
+		System.out.println(emp);
+
+
 		
 		
 		
