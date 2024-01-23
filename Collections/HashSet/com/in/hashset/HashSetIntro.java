@@ -34,8 +34,8 @@ public class HashSetIntro {
         //To check if set does contain x element or not
         System.out.println(hs.contains(12));
 
-
-
+        hs.remove(12);
+        System.out.println(hs);
 
     }
 }
