@@ -12,6 +12,8 @@ public class CustomLinkedList {
         cll.add(56);
 
         System.out.println(cll);
+
+        System.out.println(cll.length());
     }
 
     public class Node {
@@ -61,6 +63,30 @@ public class CustomLinkedList {
         return sj.toString();
 
 
+    }
+
+    public int length(){
+        int counter =0;
+
+        if(head == null)
+        {
+            return counter;
+        }
+        else{
+            Node temp = head;
+            while(temp.next != null)
+            {
+                counter++;
+                temp= temp.next;
+            }
+            /**
+             * This increment has been done for two cases
+             * First when our temp.next will be null then to count the last temp node
+             * Second when only one node is present in linked list
+             */
+            counter++;
+            return counter;
+        }
     }
 
 
