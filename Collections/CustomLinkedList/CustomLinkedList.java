@@ -44,6 +44,24 @@ public class CustomLinkedList {
             }
 
     }
+    @Override
+    public String toString() {
+        StringJoiner sj = new StringJoiner(",","[","]");
+
+        Node temp=head;
+
+        while(temp.next!=null) // 10,20,30 - 10.next = 20, 20.next=30, 30.next=null
+        {
+            sj.add(String.valueOf(temp.data));
+            temp=temp.next;
+        }
+
+        sj.add(String.valueOf(temp.data));
+
+        return sj.toString();
+
+
+    }
 
 
 }
