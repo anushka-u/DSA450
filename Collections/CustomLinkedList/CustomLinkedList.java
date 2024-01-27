@@ -12,11 +12,13 @@ public class CustomLinkedList {
         cll.add(56);
         cll.add(89);
         cll.add(76);
-        cll.remove(40);
-        cll.remove(10);
-        cll.remove(76);
+//        cll.remove(40);
+//        cll.remove(10);
+//        cll.remove(76);
 
-        cll.addAtFirst(10);
+//        cll.addAtFirst(10);
+
+        cll.addAtSpecific(64,56);
 
 
         System.out.println(cll);
@@ -150,6 +152,35 @@ public class CustomLinkedList {
         else{
             n.next=head;
             head=n;
+        }
+    }
+
+    public void addAtSpecific(Object obj, Object ind)
+    {
+        Node n = new Node(obj);
+        Node temp = head;
+        Integer element = (Integer)ind;
+
+        if(head==null)
+        {
+            head = n;
+        }
+        else {
+            while(temp.next!=null)
+            {
+                Integer data = (Integer)temp.data;
+                if(data==element                                                   )
+                {
+                    Node temp1=temp.next;
+                    temp.next=n;
+                    n.next=temp1;
+                    return;
+
+                }
+                else{
+                    temp=temp.next;
+                }
+            }
         }
     }
 
