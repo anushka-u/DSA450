@@ -10,6 +10,8 @@ public class CustomLinkedList {
         cll.add(10);
         cll.add(40);
         cll.add(56);
+        cll.remove(40);
+
 
         System.out.println(cll);
 
@@ -87,6 +89,49 @@ public class CustomLinkedList {
             counter++;
             return counter;
         }
+    }
+    public void remove(Object obj)
+    {
+        Integer objToBeRemoved = (Integer)obj;
+        if(head!=null)
+        {
+            Node temp = head;
+            Integer data = (Integer)temp.data;
+            Node previous = null;
+
+            if(data == objToBeRemoved)
+            {
+                temp =  head.next;
+                head.next = null;
+                head = temp;
+            }
+            else{
+
+                while(temp.next!=null)
+                {
+                    Integer data1 = (Integer)temp.data;
+
+                    if(data1 == objToBeRemoved)
+                    {
+                        previous.next = temp.next;
+                        temp.next=null;
+                        temp=null;
+                        return;
+                    }
+                    else{
+                        previous=temp;
+                        temp=temp.next;
+                    }
+                }
+                if((Integer)temp.data==objToBeRemoved)
+                {
+                    previous.next=null;
+                    temp=null;
+                }
+            }
+
+        }
+
     }
 
 
