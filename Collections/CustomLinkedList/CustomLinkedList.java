@@ -16,6 +16,8 @@ public class CustomLinkedList {
         cll.remove(10);
         cll.remove(76);
 
+        cll.addAtFirst(10);
+
 
         System.out.println(cll);
 
@@ -136,6 +138,19 @@ public class CustomLinkedList {
 
         }
 
+    }
+
+    public void addAtFirst(Object obj)
+    {
+        Node n = new Node(obj);
+        if(head==null)
+        {
+            head=n;
+        }
+        else{
+            n.next=head;
+            head=n;
+        }
     }
 
 
