@@ -10,7 +10,11 @@ public class CustomLinkedList {
         cll.add(10);
         cll.add(40);
         cll.add(56);
+        cll.add(89);
+        cll.add(76);
         cll.remove(40);
+        cll.remove(10);
+        cll.remove(76);
 
 
         System.out.println(cll);
