@@ -1,0 +1,8 @@
+Given two integer a and b in input, WAP to print value of a^b using recurssion
+EX: a=3, b=2
+o/p = a^b = 3^2 = 9
+
+Approach:
+a^b if b is odd then a*((a^b/2)*(a^b/2))
+a^b, if b is even then (a^b/2 * a^b/2)
+

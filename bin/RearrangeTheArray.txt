@@ -1,0 +1,17 @@
+An array contains both positive and negative numbers in random order. Rearrange the array elements so that all negative numbers appear before all positive numbers.
+
+Examples :
+
+Input: -12, 11, -13, -5, 6, -7, 5, -3, -6
+Output: -12 -13 -5 -7 -3 -6 11 6 5
+
+Three ways to solve this question:
+Sort the array _ TC : O(nlogn) using Merge sort
+Partition method
+The optimized one is to choose a low and high
+set low =0
+high = n-1
+increase low if arr[low]<0
+decrease high if arr[high]>0
+swap arr[low] and arr[high] if arr[low]>0 and arr[high]<0 and increase low, decrease high
+Time Complexity will be O(n).

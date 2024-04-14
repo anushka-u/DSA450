@@ -1,0 +1,5 @@
+Check if a string is palindrome or not using recurssion
+
+aabbaa - palindrome
+miim- palindrome
+mimi - not a palindrome

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="ArrayProblems"/>
+	<classpathentry kind="src" path="Collections/ArrayList"/>
+	<classpathentry kind="src" path="Collections/HashMap"/>
+	<classpathentry kind="src" path="Collections/HashSet"/>
+	<classpathentry kind="src" path="Collections/Iterators"/>
+	<classpathentry kind="src" path="Recurssion/BinarySearch"/>
+	<classpathentry kind="src" path="Recurssion/CountWayToReachNStairs"/>
+	<classpathentry kind="src" path="Recurssion/Factorial"/>
+	<classpathentry kind="src" path="Recurssion/Fibonacci"/>
+	<classpathentry kind="src" path="Recurssion/IsArraySorted"/>
+	<classpathentry kind="src" path="Recurssion/LinearSearch"/>
+	<classpathentry kind="src" path="Recurssion/Palindrome"/>
+	<classpathentry kind="src" path="Recurssion/Power"/>
+	<classpathentry kind="src" path="Recurssion/Power Two"/>
+	<classpathentry kind="src" path="Recurssion/ReverseString"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
