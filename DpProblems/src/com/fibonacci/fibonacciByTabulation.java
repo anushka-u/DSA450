@@ -2,6 +2,7 @@ package com.fibonacci;
 
 public class fibonacciByTabulation {
 
+	//In the tabulation implementation, we use an array called table to store the results of subproblems, and we use iteration to compute the results.
 	public static int fibonacci(int n)
 	{
 		if(n==0)
