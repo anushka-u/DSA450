@@ -1,12 +1,10 @@
-package src.com.fibonacci;
+package com.backtracking;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-//To understand the solution better : Debug on ur own -> debug and watch how the problem is dividing into subproblem and how it's breaking into pieces.
 public class WordBreak {
-
     static boolean wordBreaking(List<String> wordList, String word){
         if(word.isEmpty())
         {
@@ -36,3 +34,4 @@ public class WordBreak {
         System.out.println(wordBreaking(wordList2,word2));
     }
 }
+
