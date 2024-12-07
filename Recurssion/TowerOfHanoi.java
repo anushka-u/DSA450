@@ -11,7 +11,7 @@ public class TowerOfHanoi {
                 + src_rod + " to rod "
                 + dest_rod);
 
-        tower_Of_Hanoi(n-1,aux_rod,src_rod,dest_rod);
+        tower_Of_Hanoi(n-1,aux_rod,src_rod,dest_rod);//Src= S, Aux=D,Dest=A
     }
 
     public static void main(String[] args) {
