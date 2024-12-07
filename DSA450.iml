@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/bin" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/ArrayProblems" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Collections/ArrayList" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Collections/HashMap" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Collections/HashSet" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Collections/Iterators" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/DpProblems" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Recurssion/BinarySearch" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Recurssion/CountWayToReachNStairs" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Recurssion/Factorial" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Recurssion/Fibonacci" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Recurssion/IsArraySorted" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Recurssion/LinearSearch" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Recurssion/Palindrome" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Recurssion/Power" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Recurssion/Power Two" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Recurssion/ReverseString" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/StringsProblem" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/BackTracking" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Recurssion" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
