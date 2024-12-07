@@ -42,5 +42,8 @@ public class ReverseAString {
 
         System.out.println(result.get());
 
+        String st = "Anushka";
+        System.out.println(st.chars().mapToObj(i->(char)i).filter(c->c=='a' || c=='A').count());
+
     }
 }
