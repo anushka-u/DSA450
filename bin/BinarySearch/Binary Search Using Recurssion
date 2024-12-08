@@ -1,4 +1,4 @@
-Apply Binary search in array using recurssion
+Apply Binary search in array using recursion
 => Algorithm:
 1- To apply binary search in array, Array must be sorted
  set a low ==> low =0;

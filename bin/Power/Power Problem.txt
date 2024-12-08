@@ -1,1 +1,1 @@
-Write a Program using recurssion to print value of 2^n where n could be any positive integer
+Write a Program using recursion to print value of 2^n where n could be any positive integer

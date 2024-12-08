@@ -21,8 +21,8 @@
       <sourceFolder url="file://$MODULE_DIR$/Recurssion/Power Two" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Recurssion/ReverseString" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/StringsProblem" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/BackTracking" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Recurssion" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/RecursionDynamicProgrammingAndBackTracking" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

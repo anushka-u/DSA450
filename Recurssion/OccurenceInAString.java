@@ -26,9 +26,34 @@ public class OccurenceInAString {
         }
         CountOccurence(str,idx+1,ele);
     }
+    public static void occurenceCountWay2(String str, char ele)
+    {
+        if(str.isEmpty())
+        {
+            return;
+        }
+        char current = str.charAt(str.length()-1);
+        if(current == ele)
+        {
+            if(last==-1 && first ==-1)
+            {
+                last=str.length();
+                first = str.length();
+            }
+            else{
+                first = str.length();
+            }
+        }
+
+        occurenceCountWay2(str.substring(0,str.length()-1), ele);
+    }
     public static void main(String[] args) {
         String str = "aabarakadaabra";
-        CountOccurence(str,0,'a');
+        String str2 = "aalujaaKaChaalujaBeta";
+       // CountOccurence(str2,0,'a');
         System.out.println("First Occurence "+ first + " Last Occurence "+ last);
+        occurenceCountWay2(str2,'a');
+        System.out.println(str2.length());
+        System.out.println("First OCcurence "+ first + " Last Occurence "+ last);
     }
 }
