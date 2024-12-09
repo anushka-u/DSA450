@@ -1,4 +1,4 @@
-package recursion;
+package recursion.hard;
 
 public class knapsack {
 
@@ -11,7 +11,9 @@ public class knapsack {
 
         if(wt[n-1]<=wgt)
         {
-            return Integer.max(val[n-1]+knapsack01prb(wt,val,wgt-wt[n-1],n-1), knapsack01prb(wt,val,wgt,n-1));
+            int include = val[n-1]+knapsack01prb(wt,val,wgt-wt[n-1],n-1);
+            int exclude = knapsack01prb(wt,val,wgt,n-1);
+            return Integer.max(include,exclude);
         }
         else {
             return knapsack01prb(wt, val, wgt, n - 1);
