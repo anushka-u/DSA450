@@ -69,7 +69,7 @@ Description: Check whether a string is a palindrome using recursion.
 Input: str = "madam"
 Output: true
 __________________________________________________________________________________
-Print All Subsets of a Set
+Print All Subsets of a Set -- DONE
 
 Description: Print all subsets of a given set using recursion.
 Input: arr = [1, 2, 3]
@@ -81,7 +81,7 @@ Description: Generate all possible permutations of a string using recursion.
 Input: str = "ABC"
 Output: ["ABC", "ACB", "BAC", "BCA", "CAB", "CBA"]
 ___________________________________________________________________________________________
-Print All Combinations of a String
+Print All Combinations of a String -- DONE
 
 Description: Print all combinations of a string.
 Input: str = "AB"
@@ -99,19 +99,19 @@ Description: Find the maximum element in an array using recursion.
 Input: arr = [1, 3, 5, 2]
 Output: 5
 _________________________________________________________________________________
-Binary Search
+Binary Search -- DONE
 
 Description: Perform binary search on a sorted array using recursion.
 Input: arr = [1, 2, 3, 4, 5], target = 3
 Output: 2 (index of the element)
 ___________________________________________________________________________________
-Check for Balanced Parentheses
+Check for Balanced Parentheses -- DONE
 
 Description: Check if parentheses in a string are balanced using recursion.
 Input: str = "(())"
 Output: true
 ______________________________________________________________________________________
-Print Fibonacci Series
+Print Fibonacci Series -- DONE
 
 Description: Print the first n Fibonacci numbers using recursion.
 Input: n = 5
