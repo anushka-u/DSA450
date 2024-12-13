@@ -30,10 +30,10 @@ public class AllSubsetOfSet {
         int[] arr = {1,2,3};
         ArrayList<Integer> current  = new ArrayList<>();
         allSubset(arr,0,current);
-        for(ArrayList<Integer> a : subsets)
-        {
-            System.out.println(a);
-        }
+//        for(ArrayList<Integer> a : subsets)
+//        {
+//            System.out.println(a);
+//        }
 
         System.out.println(subsets);
     }
