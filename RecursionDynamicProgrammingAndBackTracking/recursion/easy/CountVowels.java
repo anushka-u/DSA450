@@ -27,14 +27,14 @@ public class CountVowels {
         }
         if(str.charAt(str.length()-1)!='a'&& str.charAt(str.length()-1)!='e'&&
             str.charAt(str.length()-1)!='i'&& str.charAt(str.length()-1)!='o'
-            &&str.charAt(str.length()-1)!='u'){
+            &&str.charAt(str.length()-1)!='u' && str.charAt(str.length()-1)!=' '){
             count+=1;
         }
         return countConsonants(str.substring(0,str.length()-1));
     }
 
     public static void main(String[] args) {
-        String str ="anushka";
+        String str ="Hello World";
         countConsonants(str);
         System.out.println(count);
 
