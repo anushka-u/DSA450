@@ -100,6 +100,24 @@ public class BasicImplementationOfDLL {
         temp.next = newNode;
     }
 
+    public static Node DeleteAtHead(Node node)
+    {
+        node = node.next;
+        node.prev=null;
+
+        return node;
+    }
+
+    public static void DeleteAtTail(Node node)
+    {
+        Node temp = node;
+        while(temp.next!=null)
+        {
+            temp=temp.next;
+        }
+        temp.prev.next=null;
+    }
+
     public static void main(String[] args) {
         Node node = new Node(12);
         Node node1 = new Node(32);
@@ -139,6 +157,14 @@ public class BasicImplementationOfDLL {
 
         System.out.println();
         InsertAtAnyIdx(node,3,201);
+        displayLinkedList(node);
+
+        System.out.println();
+        Node newDelHEad = DeleteAtHead(node);
+        displayLinkedList(newDelHEad);
+
+        System.out.println();
+        DeleteAtTail(node);
         displayLinkedList(node);
     }
 }
